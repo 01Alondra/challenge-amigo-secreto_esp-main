@@ -160,3 +160,70 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+.codigo-secreto {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.codigo-secreto h3 {
+  font-size: 20px;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.codigo-secreto p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.codigo-secreto input {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+  width: 240px;
+  max-width: 90%;
+}
+
+.codigo-secreto button {
+  background-color: var(--color-tertiary);
+  color: var(--color-text);
+  border-radius: 0 25px 25px 0;
+  padding: 10px 30px;
+  margin-left: -5px; /* para pegarlo visualmente al input */
+  font-size: 16px;
+  border: 2px solid #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.codigo-secreto button:hover {
+  background-color: #a1a1a1;
+}
+
+.instructions {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  background-color: #fefefe;
+  border-radius: 12px;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.instructions h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a72; /* Un azul oscuro */
+}
+.instructions ol {
+  padding-left: 20px;
+}
+.instructions ol li {
+  margin-bottom: 8px;
+}

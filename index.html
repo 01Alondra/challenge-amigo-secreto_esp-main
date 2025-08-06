@@ -17,6 +17,17 @@
             <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
         </header>
         
+        <section class="instructions">
+            <h3>Instrucciones</h3>
+            <ol>
+                <li>Agrega al menos 3 nombres y presiona "Añadir" con cada nombre agregado.</li>
+                <li>Cuando todos los participantes estén agregados, presiona "Sortear amigo".</li>
+                <li>Después de sortear, verás un código secreto asignado a cada participante.</li>
+                <li>Cada persona debe anotar su código.</li>
+                <li>Para consultar a quién le tocó, ingresa tu código en el campo "Ingresa tu código secreto" y presiona "Ver mi amigo secreto".</li>
+            </ol>
+        </section>
+
         <section class="input-section">
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
@@ -33,6 +44,20 @@
                     Sortear amigo
                 </button>
             </div>
+
+            <div class="lista-codigos" style="display:none;">
+                <h3 class="section-title">Códigos secretos de cada participante</h3>
+                <ul id="listaCodigos" class="result-list"></ul>
+            </div>
+
+            <div class="codigo-secreto">
+                <h3>Consulta tu amigo secreto</h3>
+                <p>Ingresa tu código para ver a quién te tocó</p>
+                <input type="text" id="codigo" placeholder="Ingresa tu código secreto">
+                <button onclick="verAmigoSecreto()">Ver mi amigo secreto</button>
+                <ul id="resultadoCodigo" class="result-list" aria-live="polite"></ul>
+            </div>
+            
         </section>
     </main>
 
